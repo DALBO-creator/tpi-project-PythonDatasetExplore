@@ -46,7 +46,7 @@ Lo script stampa a console:
 
 ## visualizzazione.py
 
-Script che crea visualizzazioni grafiche dei dati del dataset.
+Script che crea visualizzazioni grafiche dei dati del dataset
 
 ### Grafici Generati
 

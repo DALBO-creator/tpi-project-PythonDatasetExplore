@@ -14,7 +14,7 @@ for gioco in data:
 piattaforme = list(conteggio_piattaforme.keys())
 numeri = list(conteggio_piattaforme.values())
 
-plt.figure(figsize=(12, 6)) #larghezza, altezza in pollici
+plt.figure(figsize=(12, 6)) #larghezza e altezza in pollici
 plt.barh(piattaforme, numeri, color='skyblue', edgecolor='black')
 plt.title('Distribuzione dei Giochi per Piattaforma', fontsize=14, fontweight='bold')
 plt.ylabel('Piattaforma', fontsize=12)

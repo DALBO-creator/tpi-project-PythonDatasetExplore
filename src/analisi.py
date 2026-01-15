@@ -21,7 +21,7 @@ def analizza_voti(lista_giochi):
         print("Nessun voto numerico trovato")
 
 def conta_piattaforme(lista_giochi):
-    conteggio = {} #nuovo dizionario vuoto
+    conteggio = {} # nuovo dizionario vuoto
     for gioco in lista_giochi:
         platform = gioco.get('platform', 'Sconosciuta') #per ogni gioco recupersa il valore della chiave platform (sconosciuta se non esiste)
         conteggio[platform] = conteggio.get(platform, 0) + 1 #se la piattaforma esiste nel dizionario conteggio, incrementa il suo valore di 1, altrimenti inizializza a 0 e poi incrementa di 1

@@ -1,6 +1,6 @@
 # Python Dataset Explore
 
-Progetto per l'analisi e visualizzazione di un dataset contenente informazioni su videogiochi.
+Progetto per l'analisi e visualizzazione di un dataset contenente informazioni su videogiochi
 
 ## Descrizione
 
