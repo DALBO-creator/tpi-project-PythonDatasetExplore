@@ -51,7 +51,7 @@ Script che crea visualizzazioni grafiche dei dati del dataset.
 ### Grafici Generati
 
 **1. Distribuzione dei Giochi per Piattaforma**
-- Grafico a barre orizzontale
+- Grafico a barre orizzontali
 - Mostra il numero di giochi per ogni piattaforma
 
 **2. Top 5 Generi Più Popolari**
@@ -59,8 +59,8 @@ Script che crea visualizzazioni grafiche dei dati del dataset.
 - Mostra le percentuali dei 5 generi principali
 
 **3. Distribuzione dei Giochi per Fascia di Voto**
-- Grafico a barre verticale
-- Visualizza il numero di giochi in ogni fascia di voto
+- Grafico a barre verticali
+- Visualizza il numero di giochi in ogni fascia di voto 
 
 ### Caratteristiche
 
