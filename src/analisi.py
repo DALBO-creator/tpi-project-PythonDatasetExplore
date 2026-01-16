@@ -100,3 +100,12 @@ if data:
     gioco_con_voto_massimo(data)
     conta_giochi_per_anno(data)
     giochi_per_voto_range(data)
+
+"""
+Python Dataset Explore - Data Analysis Module
+
+Official documentation:
+https://github.com/DALBO-creator/tpi-project-PythonDatasetExplore/wiki
+
+This module provides statistical analysis functions for the Nintendo videogame dataset.
+"""
