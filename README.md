@@ -14,11 +14,16 @@ Questo progetto carica un dataset JSON di videogiochi da un repository GitHub e 
 ```
 tpi-project-PythonDatasetExplore/
 ├── data/
-│   └── m.json              # Dataset dei videogiochi
+│   └── m.json                # Dataset dei videogiochi
 ├── src/
-│   ├── analisi.py          # Script di analisi dati
-│   └── visualizzazione.py  # Script di visualizzazione
-└── README.md
+│   ├── analisi.py            # Script di analisi dati
+│   └── visualizzazione.py    # Script di visualizzazione
+├── LICENSE                   # Licenza del progetto
+├── DOCUMENTAZIONE.md         # Documentazione dettagliata (in italiano)
+├── SECURITY.md               # Linee guida di sicurezza
+├── .gitattributes            # Configurazione attributi Git
+├── README.md                 # Questo file
+└── [Wiki ufficiale](https://github.com/DALBO-creator/tpi-project-PythonDatasetExplore/wiki) (in inglese)
 ```
 
 ## Dataset
