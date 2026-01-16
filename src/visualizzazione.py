@@ -20,6 +20,7 @@ plt.title('Distribuzione dei Giochi per Piattaforma', fontsize=14, fontweight='b
 plt.ylabel('Piattaforma', fontsize=12)
 plt.xlabel('Numero di Giochi', fontsize=12)
 plt.tight_layout() #tight layout serve per evitare sovrapposizioni andando a sistemare automaticamente gli spazi tra gli elementi del grafico
+plt.savefig("img/grafico_barre.png" )
 plt.show()
 
 #Top 5 generi
@@ -40,6 +41,7 @@ colors = ['#ff9999', '#66b3ff', '#99ff99', '#ffcc99', '#ff99cc']
 plt.pie(generi_conteggi, labels=generi_nomi, autopct='%1.1f%%', colors=colors) #autopct='%1.1f%%' mostra percentuali (calolate automaticamente in base ai dati forniti) con una cifra decimale
 plt.title('Top 5 Generi più Popolari', fontsize=14, fontweight='bold')
 plt.tight_layout() 
+plt.savefig("img/grafico_torta.png")
 plt.show()
 
 #Distribuzione per fascia di voto 
@@ -68,5 +70,6 @@ plt.title('Distribuzione dei Giochi per Fascia di Voto', fontsize=14, fontweight
 plt.ylabel('Numero di Giochi', fontsize=12)
 plt.xlabel('Fascia di Voto', fontsize=12)
 plt.tight_layout()
+plt.savefig("img/grafico_fasce.png")
 plt.show()
 

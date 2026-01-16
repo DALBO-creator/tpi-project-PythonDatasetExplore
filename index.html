@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Dataset Explore</title>
+    <style>
+        :root {
+            --bg-dark: #232323;
+            --bg-medium: #2e2e2e;
+            --bg-light: #444;
+            --text-main: #d0d0d0;
+            --text-secondary: #a0a0a0;
+            --border: #393939;
+            --accent: #666;
+        }
+        html, body {
+            background: var(--bg-dark);
+            color: var(--text-main);
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: var(--bg-medium);
+            padding: 2.5rem 0 1.2rem 0;
+            text-align: center;
+            border-bottom: 1px solid var(--border);
+        }
+        header h1 {
+            margin: 0 0 0.5rem 0;
+            font-size: 2.7rem;
+            letter-spacing: 1px;
+            color: var(--text-main);
+        }
+        header p {
+            color: var(--text-secondary);
+            font-size: 1.2rem;
+            margin: 0;
+        }
+        nav {
+            background: var(--bg-dark);
+            padding: 1rem 0 0.5rem 0;
+            text-align: center;
+        }
+        nav button {
+            background: var(--bg-light);
+            color: var(--text-main);
+            border: none;
+            margin: 0 0.5rem;
+            padding: 0.6rem 1.5rem;
+            font-size: 1.05rem;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        nav button:hover, nav button.active {
+            background: var(--accent);
+        }
+        main {
+            max-width: 800px;
+            margin: 2.5rem auto 2rem auto;
+            background: var(--bg-medium);
+            border-radius: 10px;
+            box-shadow: 0 2px 12px #0007;
+            padding: 2.5rem 2rem 2rem 2rem;
+        }
+        section {
+            display: none;
+        }
+        section.active {
+            display: block;
+        }
+        h2 {
+            color: var(--text-main);
+            font-size: 1.5rem;
+            margin-top: 0;
+        }
+        ul, ol {
+            color: var(--text-secondary);
+            font-size: 1.08rem;
+        }
+        .screenshot-box {
+            background: var(--bg-light);
+            border: 1px solid var(--border);
+            border-radius: 7px;
+            width: 100%;
+            max-width: 420px;
+            height: 180px;
+            margin: 1.2rem auto 1.5rem auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--text-secondary);
+            font-size: 1.1rem;
+            letter-spacing: 1px;
+        }
+        .faq {
+            margin-top: 2.2rem;
+        }
+        .faq-item {
+            margin-bottom: 1.3rem;
+        }
+        .faq-q {
+            color: var(--text-main);
+            font-weight: bold;
+        }
+        .faq-a {
+            color: var(--text-secondary);
+            margin-left: 0.5rem;
+        }
+        .footer {
+            text-align: center;
+            color: #888;
+            font-size: 0.98rem;
+            margin: 2.5rem 0 1.2rem 0;
+        }
+        a {
+            color: #b0b0b0;
+            text-decoration: underline;
+        }
+        code {
+            background: var(--bg-light);
+            color: var(--text-main);
+            padding: 0.1em 0.4em;
+            border-radius: 4px;
+            font-size: 1em;
+        }
+        @media (max-width: 600px) {
+            main { padding: 1.2rem 0.5rem; }
+            .screenshot-box { height: 110px; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Python Dataset Explore</h1>
+        <p>Analisi e visualizzazione di dataset di videogiochi in Python</p>
+    </header>
+    <nav>
+        <button onclick="showSection('cos_e')" class="active">Cos'è?</button>
+        <button onclick="showSection('funzionalita')">Funzionalità</button>
+        <button onclick="showSection('struttura')">Struttura</button>
+        <button onclick="showSection('utilizzo')">Utilizzo</button>
+        <button onclick="showSection('faq')">FAQ</button>
+    </nav>
+    <main>
+        <section id="cos_e" class="active">
+            <h2>Cos'è questo progetto?</h2>
+            <p><b>Python Dataset Explore</b> è uno strumento open source per analizzare e visualizzare dati relativi a videogiochi, scritto in Python. Il progetto permette di:</p>
+            <ul>
+                <li>Caricare automaticamente un dataset JSON di videogiochi da GitHub</li>
+                <li>Effettuare analisi statistiche su voti, piattaforme, generi e anni di rilascio</li>
+                <li>Visualizzare i risultati tramite grafici chiari e intuitivi</li>
+            </ul>
+            <div class="screenshot-box"><img src="../img/grafico_barre.png" alt="Grafico a barre" style="max-width:100%;max-height:170px;display:block;margin:auto;background:#232323;border-radius:6px;"></div>
+            <p>Il progetto è pensato per studenti, appassionati di dati e chiunque voglia esplorare dataset reali in modo semplice e veloce.</p>
+        </section>
+        <section id="funzionalita">
+            <h2>Funzionalità principali</h2>
+            <ul>
+                <li>Analisi automatica dei dati: calcolo di medie, minimi, massimi, distribuzioni</li>
+                <li>Visualizzazione grafica: grafici a barre e a torta generati con <code>matplotlib</code></li>
+                <li>Gestione di dataset reali in formato JSON</li>
+                <li>Codice Python ben documentato e facilmente estendibile</li>
+                <li>Documentazione dettagliata e wiki ufficiale</li>
+            </ul>
+            <div class="screenshot-box"><img src="../img/grafico_torta.png" alt="Grafico a torta" style="max-width:100%;max-height:170px;display:block;margin:auto;background:#232323;border-radius:6px;"></div>
+        </section>
+        <section id="struttura">
+            <h2>Struttura del progetto</h2>
+            <ul>
+                <li><b>data/m.json</b>: Dataset dei videogiochi</li>
+                <li><b>src/analisi.py</b>: Script per l'analisi statistica</li>
+                <li><b>src/visualizzazione.py</b>: Script per la creazione di grafici</li>
+                <li><b>DOCUMENTAZIONE.md</b>: Documentazione tecnica in italiano</li>
+                <li><b>README.md</b>, <b>LICENSE</b>, <b>SECURITY.md</b>, <b>.gitattributes</b></li>
+                <li>Wiki ufficiale in inglese (<a href="https://github.com/DALBO-creator/tpi-project-PythonDatasetExplore/wiki" target="_blank">link</a>)</li>
+            </ul>
+        </section>
+        <section id="utilizzo">
+            <h2>Come si usa?</h2>
+            <ol>
+                <li>Scarica o clona il progetto da <a href="https://github.com/DALBO-creator/tpi-project-PythonDatasetExplore" target="_blank">GitHub</a></li>
+                <li>Installa le dipendenze Python:
+                    <ul>
+                        <li><code>requests</code> (per scaricare il dataset)</li>
+                        <li><code>matplotlib</code> (per le visualizzazioni)</li>
+                    </ul>
+                </li>
+                <li>Esegui <code>python src/analisi.py</code> per vedere le statistiche testuali</li>
+                <li>Esegui <code>python src/visualizzazione.py</code> per generare i grafici</li>
+            </ol>
+            <div class="screenshot-box"><img src="../img/grafico_fasce.png" alt="Grafico fasce di voto" style="max-width:100%;max-height:170px;display:block;margin:auto;background:#232323;border-radius:6px;"></div>
+        </section>
+        <section id="faq" class="faq">
+            <h2>FAQ</h2>
+            <div class="faq-item">
+                <span class="faq-q">Posso usare un mio dataset?</span>
+                <span class="faq-a">Sì, basta sostituire il file <code>data/m.json</code> con il tuo dataset (stesso formato).</span>
+            </div>
+            <div class="faq-item">
+                <span class="faq-q">Serve una connessione internet?</span>
+                <span class="faq-a">Solo per scaricare il dataset la prima volta. Dopo puoi lavorare offline.</span>
+            </div>
+            <div class="faq-item">
+                <span class="faq-q">Il codice è open source?</span>
+                <span class="faq-a">Sì, con licenza MIT. Puoi modificarlo e riutilizzarlo liberamente.</span>
+            </div>
+            <div class="faq-item">
+                <span class="faq-q">Dove trovo la documentazione?</span>
+                <span class="faq-a">Nel file <code>DOCUMENTAZIONE.md</code> e nella <a href="https://github.com/DALBO-creator/tpi-project-PythonDatasetExplore/wiki" target="_blank">wiki ufficiale</a>.</span>
+            </div>
+        </section>
+    </main>
+    <div class="footer">
+        &copy; 2026 Python Dataset Explore &mdash; <a href="https://github.com/DALBO-creator/tpi-project-PythonDatasetExplore/wiki" target="_blank">Wiki ufficiale</a>
+    </div>
+    <script>
+        function showSection(id) {
+            document.querySelectorAll('nav button').forEach(btn => btn.classList.remove('active'));
+            document.querySelectorAll('section').forEach(sec => sec.classList.remove('active'));
+            document.getElementById(id).classList.add('active');
+            const btns = document.querySelectorAll('nav button');
+            if(id === 'cos_e') btns[0].classList.add('active');
+            if(id === 'funzionalita') btns[1].classList.add('active');
+            if(id === 'struttura') btns[2].classList.add('active');
+            if(id === 'utilizzo') btns[3].classList.add('active');
+            if(id === 'faq') btns[4].classList.add('active');
+        }
+    </script>
+</body>
+</html>
