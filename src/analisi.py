@@ -24,7 +24,7 @@ def conta_piattaforme(lista_giochi):
     conteggio = {} # nuovo dizionario vuoto
     for gioco in lista_giochi:
         platform = gioco.get('platform', 'Sconosciuta') #per ogni gioco recupersa il valore della chiave platform (sconosciuta se non esiste)
-        conteggio[platform] = conteggio.get(platform, 0) + 1 #se la piattaforma esiste nel dizionario conteggio, incrementa il suo valore di 1, altrimenti inizializza a 0 e poi incrementa di 1
+        conteggio[platform] = conteggio.get(platform, 0) + 1 #se la piattaforma esiste nel dizionario conteggio incrementa il suo valore di 1, altrimenti inizializza a 0 e poi incrementa di 1
     
     print("\nDistribuzione per piattaforma:")
     for platform, count in conteggio.items(): #.items estrare coppie chiave-valore dal dizionario --> per ogni coppia all'interno dell'insieme delle coppie..
@@ -33,7 +33,7 @@ def conta_piattaforme(lista_giochi):
 def conta_generi(lista_giochi): 
     generi_count = {}
     for gioco in lista_giochi:
-        generi = gioco.get('genres', [])
+        generi = gioco.get('genres', []) #genres è una lista (più generi per gioco), quindi o lista dei generi o lista vuota
         for genere in generi:
             generi_count[genere] = generi_count.get(genere, 0) + 1
     
