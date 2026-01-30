@@ -1,5 +1,8 @@
 import requests
 import matplotlib.pyplot as plt
+# import os as OS
+# OS.environ = (HTTP_PROXY) = "http://127.0.0.1:8888/"
+# OS.environ = (HTTPS_PROXY) = "http://127.0.0.1:8888/"
 
 url = "https://raw.githubusercontent.com/DALBO-creator/tpi-project-PythonDatasetExplore/main/data/m.json"
 response = requests.get(url)
